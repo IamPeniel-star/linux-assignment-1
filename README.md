@@ -36,6 +36,8 @@ ls -la
 
 **Evidence:** Screenshot 1 — Basic Linux Information.
 
+![Evidence 1 — Basic Linux Information](evidence-1-basic-linux.png)
+
 ---
 
 ### 2. Directory and File Creation
@@ -58,6 +60,8 @@ ls -la
 - `ls -la` — verifies the created file and directory contents.
 
 **Evidence:** Screenshot 2 — Directory and File Creation.
+
+![Evidence 2 — Directory and File Creation](evidence-2-file-creation.png)
 
 ---
 
@@ -85,6 +89,8 @@ The file content used for the practical exercise was `Linux Assignment 1`.
 
 **Evidence:** Screenshot 3 — File Content, Copying and Renaming.
 
+![Evidence 3 — File Content, Copying and Renaming](evidence-3-file-management.png)
+
 ---
 
 ### 4. Searching and File Permissions
@@ -105,6 +111,8 @@ ls -l test.txt
 - `ls -l` — displays detailed file permissions.
 
 **Evidence:** Screenshot 4 — Searching and File Permissions.
+
+![Evidence 4 — Searching and File Permissions](evidence-4-search-permissions.png)
 
 ---
 
@@ -128,6 +136,20 @@ pwd
 
 **Evidence:** Screenshot 5 — File Removal and Navigation.
 
+![Evidence 5 — File Removal and Navigation](evidence-5-cleanup.png)
+
+---
+
+## Additional Linux Evidence
+
+### 6. Installing Google Chrome from the Downloads Directory
+
+An additional practical exercise was documented showing the installation of a downloaded Google Chrome package from the `/Downloads` directory in Kali Linux. This provides supplementary evidence of working with downloaded files and installing software from the Linux command line.
+
+**Evidence:** Screenshot 6 — Chrome Installation from Downloads.
+
+![Evidence 6 — Chrome Installation from Downloads](evidence-6-chrome-installation.png)
+
 ---
 
 ## Command Summary
@@ -136,7 +158,7 @@ pwd
 |---|---|
 | `pwd` | Displays the current working directory |
 | `whoami` | Displays the current user |
-| `date` | Displays the system date and time |
+| `date` | Displays the current date and time |
 | `ls` | Lists directory contents |
 | `ls -la` | Lists detailed contents, including hidden files |
 | `cd` | Changes directory |
@@ -153,8 +175,8 @@ pwd
 
 ## Conclusion
 
-This practical exercise provided hands-on experience with essential Linux command-line operations using Kali Linux. The exercises covered filesystem navigation, directory and file creation, file manipulation, text searching, permission management, and file removal.
+This practical exercise provided hands-on experience with essential Linux command-line operations using Kali Linux. The exercises covered filesystem navigation, directory and file creation, file manipulation, text searching, permission management, file removal, and an additional software installation task.
 
 ## Evidence
 
-The screenshots referenced above are the student's original terminal screenshots from the practical exercises. They should be added to the repository before submission.
+The screenshots included in this repository are the student's original terminal screenshots from the practical exercises. They document the work performed in the Kali Linux environment.
