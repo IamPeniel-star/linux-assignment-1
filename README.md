@@ -1,100 +1,160 @@
 # Linux Assignment 1 — Linux Commands
 
-## Objective
-
-This assignment demonstrates practical knowledge of basic Linux command-line operations. Each command will be executed in a Linux environment and documented with its purpose, command used, observed result, and supporting screenshot.
-
 ## Student
 
 **Name:** Akinsola Peniel
 
 ## Environment
 
-- **Operating System / Linux environment:** To be completed
-- **Terminal:** To be completed
+- **Operating System:** Kali Linux
+- **Terminal:** Kali Linux Terminal
 
-## Commands and Demonstrations
+## Objective
 
-### 1. `pwd` — Print Working Directory
-**Purpose:** Displays the current working directory.
-**Command:** `pwd`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+The objective of this assignment is to demonstrate practical knowledge of basic Linux command-line operations, including navigation, file and directory management, searching, and file permissions.
 
-### 2. `ls` — List Directory Contents
-**Purpose:** Lists files and directories in the current location.
-**Command:** `ls`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+## Practical Exercises
 
-### 3. `cd` — Change Directory
-**Purpose:** Moves from one directory to another.
-**Command:** `cd <directory>`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+### 1. Basic Linux Information
 
-### 4. `mkdir` — Create a Directory
-**Purpose:** Creates a new directory.
-**Command:** `mkdir test_directory`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+The following commands were executed in the Kali Linux terminal:
 
-### 5. `touch` — Create a File
-**Purpose:** Creates an empty file or updates a file timestamp.
-**Command:** `touch test.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+```bash
+pwd
+whoami
+date
+ls
+ls -la
+```
 
-### 6. `cp` — Copy Files
-**Purpose:** Copies a file or directory to another location.
-**Command:** `cp test.txt test_copy.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+**What was demonstrated:**
+- `pwd` — displays the current working directory.
+- `whoami` — displays the current logged-in user.
+- `date` — displays the current system date and time.
+- `ls` — lists files and directories.
+- `ls -la` — lists files and directories, including hidden files, with detailed information.
 
-### 7. `mv` — Move or Rename Files
-**Purpose:** Moves or renames a file or directory.
-**Command:** `mv test_copy.txt renamed_test.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+**Evidence:** Screenshot 1 — Basic Linux Information.
 
-### 8. `rm` — Remove Files
-**Purpose:** Removes a file or directory when used with the appropriate options.
-**Command:** `rm renamed_test.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+---
 
-### 9. `cat` — Display File Contents
-**Purpose:** Displays the contents of a text file in the terminal.
-**Command:** `cat test.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+### 2. Directory and File Creation
 
-### 10. `whoami` — Display Current User
-**Purpose:** Shows the username of the currently logged-in user.
-**Command:** `whoami`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+The following commands were executed:
 
-### 11. `chmod` — Change File Permissions
-**Purpose:** Changes permission settings of a file or directory.
-**Command:** `chmod +x script.sh`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+```bash
+mkdir linux_assignment_test
+cd linux_assignment_test
+pwd
+touch test.txt
+ls -la
+```
 
-### 12. `grep` — Search Text
-**Purpose:** Searches for matching text within files or command output.
-**Command:** `grep "text" test.txt`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+**What was demonstrated:**
+- `mkdir` — creates a directory.
+- `cd` — changes the current directory.
+- `pwd` — confirms the current working directory.
+- `touch` — creates an empty file.
+- `ls -la` — verifies the created file and directory contents.
 
-### 13. `find` — Find Files and Directories
-**Purpose:** Searches for files and directories based on specified criteria.
-**Command:** `find . -name "test.txt"`
-**Observed result:** To be completed after running the command.
-**Screenshot:** Add screenshot here.
+**Evidence:** Screenshot 2 — Directory and File Creation.
 
-## Summary
+---
 
-This assignment provides practical experience with common Linux commands used for navigating the filesystem, creating and managing files and directories, searching for information, and working with permissions.
+### 3. File Content, Copying and Renaming
 
-**Important:** Observed results and screenshots should be based on commands actually executed in the student's Linux environment.
+The following commands were executed:
+
+```bash
+echo "Linux Assignment 1" > test.txt
+cat test.txt
+cp test.txt test_copy.txt
+mv test_copy.txt renamed_test.txt
+ls -la
+cat renamed_test.txt
+```
+
+**What was demonstrated:**
+- `echo` — writes text to a file.
+- `cat` — displays the contents of a file.
+- `cp` — creates a copy of a file.
+- `mv` — moves or renames a file.
+- `ls -la` — verifies the files in the directory.
+
+The file content used for the practical exercise was `Linux Assignment 1`.
+
+**Evidence:** Screenshot 3 — File Content, Copying and Renaming.
+
+---
+
+### 4. Searching and File Permissions
+
+The following commands were executed:
+
+```bash
+grep "Linux" test.txt
+find . -name "test.txt"
+chmod +x test.txt
+ls -l test.txt
+```
+
+**What was demonstrated:**
+- `grep` — searches for matching text in a file.
+- `find` — searches for a file by name.
+- `chmod +x` — adds execute permission to the file.
+- `ls -l` — displays detailed file permissions.
+
+**Evidence:** Screenshot 4 — Searching and File Permissions.
+
+---
+
+### 5. Removing Files and Returning to the Parent Directory
+
+The following commands were executed:
+
+```bash
+rm renamed_test.txt
+rm test.txt
+ls -la
+cd ..
+pwd
+```
+
+**What was demonstrated:**
+- `rm` — removes files.
+- `ls -la` — verifies the directory contents after removal.
+- `cd ..` — returns to the parent directory.
+- `pwd` — confirms the current working directory.
+
+**Evidence:** Screenshot 5 — File Removal and Navigation.
+
+---
+
+## Command Summary
+
+| Command | Purpose |
+|---|---|
+| `pwd` | Displays the current working directory |
+| `whoami` | Displays the current user |
+| `date` | Displays the system date and time |
+| `ls` | Lists directory contents |
+| `ls -la` | Lists detailed contents, including hidden files |
+| `cd` | Changes directory |
+| `mkdir` | Creates a directory |
+| `touch` | Creates an empty file |
+| `echo` | Writes text to a file or displays text |
+| `cat` | Displays file contents |
+| `cp` | Copies files or directories |
+| `mv` | Moves or renames files/directories |
+| `rm` | Removes files/directories |
+| `grep` | Searches for matching text |
+| `find` | Searches for files/directories |
+| `chmod` | Changes file permissions |
+
+## Conclusion
+
+This practical exercise provided hands-on experience with essential Linux command-line operations using Kali Linux. The exercises covered filesystem navigation, directory and file creation, file manipulation, text searching, permission management, and file removal.
+
+## Evidence
+
+The screenshots referenced above are the student's original terminal screenshots from the practical exercises. They should be added to the repository before submission.
