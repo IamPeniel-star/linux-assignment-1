@@ -1,4 +1,4 @@
-# Linux Assignment 1 — Linux Commands
+# Linux Commands — Linux & Cybersecurity Practice
 
 ## Student
 
